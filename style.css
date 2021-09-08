@@ -5,7 +5,7 @@
     
     width: 100vw;
     height: 100vh;
-    background-color: lightslategrey;
+    background-color: gainsboro;
 }
 
 .door{
@@ -39,9 +39,20 @@
     left: 0;
 
     transition: 0.5s;
-    transform-origin: 0%;
+    transform-origin: 0%;/*  */
     cursor: pointer;
 }
+.door:nth-child(1) .door-body{
+    background-color: lightblue;
+}
+.door:nth-child(2) .door-body{
+    background-color: lightcyan;
+}
+.door:nth-child(3) .door-body{
+    background-color: lightgreen;
+}
+
+
 
 
 .poke{
@@ -57,10 +68,21 @@
     background-position: 50% 100%;
     background-size: contain;
 
+    transform: translate3d(100%, 0, 0);
+    transition: .5s  .5s;
+
 
 }
 
 
 .door:nth-child(1) .poke{
     background-image: url(images/poke1.png);
+}
+
+.door:nth-child(2) .poke{
+    background-image: url(images/poke2.png);
+}
+
+.door:nth-child(3) .poke{
+    background-image: url(images/poke3.png);
 }
