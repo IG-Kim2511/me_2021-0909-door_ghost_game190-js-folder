@@ -6,7 +6,6 @@ function () {
 
     stageElem.addEventListener("click",doorHandler);
     
-
     
     function doorHandler(e) {
      
